@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word-Man</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONTS: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <canvas id="canvas"></canvas>
+
+    <div id="main-div">
+        <div id="left-div" style="display:flex; align-items:center; gap:7px">
+            <div id="left-div" style="display:block;">
+                <div id="boxes" style="display:flex"></div>
+
+                <input type="text" id="input" placeholder="Enter a word">
+
+                <button id="guess-button" onclick="guess()"> Guess </button>
+                <button id="play-button" onclick="startGame()"> Play </button>
+                
+                <p id="score" style="display:block" margin="0px"> Click "Play" to start your game! </p> <!-- how many letters the user has correct in total -->
+
+                <div id="guesses" style="display:grid"></div>
+            </div>
+
+            <div id="right-div" style="margin:auto">
+                <div id="letters" style="display:grid">
+                    <p style="font-size:20px"> Incorrect Letters: </p>
+                    <p id="incorrect-letters"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="game.js"></script> -->
+    
+    <!-- <button onclick="solveGrid(grid)"> Solve </button> -->
+    <!-- <button onclick="fadeIn()"> test </button> -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
