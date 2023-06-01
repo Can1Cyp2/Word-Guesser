@@ -2,7 +2,15 @@ const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
 //const words = ['hello', 'world'] // ,'games', 'plays', 'tests', 'hairy'];
-const words = ['world']
+let words = []; // stores the words from the words.txt file
+
+// Get the words from the word file and store them in the words array:
+fetch('words.txt').then(response => response.text()).then(text => {
+    let wordsArray = text.split('\n');
+    wordsArray.forEach(word => {
+        words.push(word);
+    });
+});
 
 
 // colours:
