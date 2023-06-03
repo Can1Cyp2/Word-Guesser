@@ -1,6 +1,6 @@
-<h1> Word-Man </h1>
+<h1> WordGuesser </h1>
 
-A variation on the classic game Hangman.
+A variation on the popular game Wordle.
 
 Try it here: (coming soon)
 
