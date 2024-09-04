@@ -2,5 +2,5 @@
 
 A variation on the popular game Wordle.
 
-Try it here: (coming soon)
+Try it here: (https://can1cyp2.github.io/Word-Guesser/)
 
